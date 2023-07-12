@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <script id="search-js" defer src="https://api.mapbox.com/search-js/v1.0.0-beta.16/web.js">
+  </script>
+  <script>
+    const script = document.getElementById('search-js');
+    script.onload = function () {
+      mapboxsearch.autofill({
+        accessToken: 'pk.eyJ1IjoiaHVpZ2kiLCJhIjoiY2xnYjhxbzdhMXA4ZTNsbzd2Nm80OWsycSJ9.bIZhzPsqKFWtpMgJHDfM7Q'
+      });
+    };
+  </script>
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="text/javascript" src="https://app.sandbox.midtrans.com/snap/snap.js"
+    data-client-key="SB-Mid-client-NBwrAg5DUeFwbrxf"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
