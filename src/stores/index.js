@@ -131,6 +131,7 @@ export const useMainStore = defineStore("main", {
           data: { lat: this.coordinates[1], lng: this.coordinates[0] },
         });
         if (data === "Rain" || data === "Clouds" || data === "Mist") this.mapStyle = "dark";
+        //
       } catch (error) {
         console.log(error);
         Swal.fire({
